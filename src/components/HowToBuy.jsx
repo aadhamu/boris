@@ -1,30 +1,28 @@
- import { Wallet, Coins, Repeat, ArrowRightLeft } from "lucide-react";
+import { Wallet, Coins, Repeat, ArrowRightLeft } from "lucide-react";
+
 function HowToBuy() {
-
-
-const steps = [
-  {
-    title: "Create a Wallet",
-    desc: "Download MetaMask or TrustWallet from the official website or app store.",
-    icon: <Wallet className="w-10 h-10 text-white" />
-  },
-  {
-    title: "Get Some ETH",
-    desc: "Buy ETH from an exchange (Binance, Coinbase, etc.) and send it to your wallet.",
-    icon: <Coins className="w-10 h-10 text-white" />
-  },
-  {
-    title: "Go to Uniswap",
-    desc: "Open Uniswap, connect your wallet, and paste the Boris contract address.",
-    icon: <Repeat className="w-10 h-10 text-white" />
-  },
-  {
-    title: "Swap ETH for $BORIS",
-    desc: "Select ETH → $BORIS, confirm the swap, and you're officially part of the Boris fam.",
-    icon: <ArrowRightLeft className="w-10 h-10 text-white" />
-  }
-];
-
+  const steps = [
+    {
+      title: "Create a Wallet",
+      desc: "Download MetaMask or TrustWallet from the official website or app store.",
+      icon: <Wallet className="w-10 h-10 text-white" />
+    },
+    {
+      title: "Get Some ETH",
+      desc: "Buy ETH from an exchange (Binance, Coinbase, etc.) and send it to your wallet.",
+      icon: <Coins className="w-10 h-10 text-white" />
+    },
+    {
+      title: "Go to Uniswap",
+      desc: "Open Uniswap, connect your wallet, and paste the Boris contract address.",
+      icon: <Repeat className="w-10 h-10 text-white" />
+    },
+    {
+      title: "Swap ETH for $BORIS",
+      desc: "Select ETH → $BORIS, confirm the swap, and you're officially part of the Boris fam.",
+      icon: <ArrowRightLeft className="w-10 h-10 text-white" />
+    }
+  ];
 
   const contractAddress = "0x98457991b3494e56e7e80618e8b64da61a018d09";
 
@@ -222,6 +220,29 @@ const steps = [
         </a>
       </div>
 
+      {/* Boris Forever Image - Added just before the steps */}
+      <div style={{
+        maxWidth: '400px',
+        margin: '0 auto 2.5rem',
+        borderRadius: '16px',
+        overflow: 'hidden',
+        boxShadow: '0 8px 20px rgba(0, 0, 0, 0.1)',
+        border: '1px solid rgba(255, 255, 255, 0.5)',
+        zIndex: '2',
+        position: 'relative',
+        animation: 'fadeInUp 0.8s ease-out 0.2s both'
+      }}>
+        <img
+          src="/images/borisforever.jpg"
+          alt="Boris Forever"
+          style={{
+            width: '100%',
+            height: 'auto',
+            display: 'block'
+          }}
+        />
+      </div>
+
       {/* Steps Container */}
       <div style={{
         maxWidth: '800px',
@@ -281,7 +302,22 @@ const steps = [
               {i + 1}
             </div>
             
-           
+            {/* Icon container - Fixed the missing icon container */}
+            <div style={{
+              width: '80px',
+              height: '80px',
+              borderRadius: '50%',
+              margin: '0 auto 1.5rem',
+              background: 'linear-gradient(45deg, #6c5ce7, #a29bfe)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              boxShadow: '0 8px 20px rgba(108, 92, 231, 0.3)',
+              animation: 'bounceIn 1s ease-out both',
+              animationDelay: `${i * 0.4 + 0.5}s`
+            }}>
+              {step.icon}
+            </div>
             
             <h3 style={{
               fontSize: 'clamp(1.3rem, 3vw, 1.6rem)',

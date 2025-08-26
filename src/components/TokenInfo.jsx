@@ -328,9 +328,7 @@ function TokenInfo() {
             lineHeight: '1.6',
             textAlign: 'left'
           }}>
-            <p style={{ marginBottom: '1.2rem' }}>
-              <span style={{ fontWeight: 'bold', color: '#6c5ce7' }}>Boris is here to make memecoins great again</span> — tired of watching everyone play hot potato with the endless derivative ShibaCumGMElonKishuTurboAssFlokiMoon Inu coins. The Inu's have had their day. It's time for the most AI pet trending to take over.
-            </p>
+            
             
             <p style={{ marginBottom: '1.2rem' }}>
               Boris is here to bring fresh life to memecoins. The endless stream of Inu and Floki spinoffs had their moment, but it's time for something new.
