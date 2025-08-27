@@ -99,12 +99,22 @@ function Navbar() {
           </div>
           
           <div className="social-links">
-            <a href="https://t.me/yourtelegram" target="_blank" rel="noopener noreferrer">
-              <span className="social-icon">📢</span>
-            </a>
-            <a href="https://x.com/yourtwitter" target="_blank" rel="noopener noreferrer">
-              <span className="social-icon">🐦</span>
-            </a>
+           <a 
+  href="https://t.me/Portal_Boris" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <span className="social-icon">📢</span>
+</a>
+
+<a 
+  href="https://x.com/boristhemammoth?s=21" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <span className="social-icon">🐦</span>
+</a>
+
             <a href="https://app.uniswap.org/" target="_blank" rel="noopener noreferrer">
               <span className="social-icon">💧</span>
             </a>

@@ -1,6 +1,6 @@
 function Hero() {
   const copyAddress = () => {
-    navigator.clipboard.writeText("0x1234567890abcdef");
+    navigator.clipboard.writeText("0x98457991b3494e56e7e80618e8b64da61a018d09");
     alert("Contract address copied to clipboard!");
   };
 
